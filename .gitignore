@@ -29,7 +29,7 @@ build/
 
 ### VS Code ###
 .vscode/
-
+.derby.log
 local.test.db
 uploads
 mvnw
