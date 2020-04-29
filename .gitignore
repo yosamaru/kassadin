@@ -32,3 +32,5 @@ build/
 
 local.test.db
 uploads
+mvnw
+mvnw.cmd
