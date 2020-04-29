@@ -1,0 +1,30 @@
+<div ng-controller="ChequeController">
+    <table border="1" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr>
+            <td align="center">User</td>
+            <td align="center">Amount</td>
+            <td align="center">Status</td>
+            <td align="center">Approved By</td>
+            <td align="center">Approved Date</td>
+            <td align="center">Created Date</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="cheque in cheques">
+            <td align="center">{{cheque.userName}}</td>
+            <td align="center">{{cheque.amount}}</td>
+            <td align="center">{{cheque.status==0?'冻结':'解冻'}}</td>
+            <td align="center">{{cheque.moderatorName}}</td>
+            <td align="center">{{cheque.approvedDate}}</td>
+            <td align="center">{{cheque.createTime}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <a type="button" href="#/page/cheque/add" ng-show="auditShow==1" ng-cloak>添加支票</a>
+</div>
+<script>
+
+
+</script>

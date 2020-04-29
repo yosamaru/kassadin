@@ -1,0 +1,28 @@
+<div ng-controller="PublisherController">
+    <table border="1" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr>
+            <td align="center">Name</td>
+            <td align="center">Email</td>
+            <td align="center">Address</td>
+            <td align="center">Telephone</td>
+            <td align="center">Fax</td>
+            <td align="center">Handler</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="publish in publishers">
+            <td align="center">{{publish.name}}</td>
+            <td align="center">{{publish.email}}</td>
+            <td align="center">{{publish.address}}</td>
+            <td align="center">{{publish.telephone}}</td>
+            <td align="center">{{publish.fax}}</td>
+            <td align="center">
+                <input type="button" ng-click="remove(publish.id)" value="Remove">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <a type="button" href="#/page/publisher/add" ng-cloak>添加出版</a>
+</div>

@@ -1,0 +1,26 @@
+<div ng-controller="StatisticsController">
+    <table border="1" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr>
+            <td align="center">总订单数</td>
+            <td align="center">待审核订单数</td>
+            <td align="center">成功订单数</td>
+            <td align="center">失败订单数</td>
+            <td align="center">总流水数</td>
+            <td align="center">扣减金额</td>
+            <td align="center">充值金额</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td align="center">{{statistics.orderNum}}</td>
+            <td align="center">{{statistics.wOderNum}}</td>
+            <td align="center">{{statistics.sOderNum}}</td>
+            <td align="center">{{statistics.fOrderNum}}</td>
+            <td align="center">{{statistics.aSum}}</td>
+            <td align="center">{{statistics.dAmountAll}}</td>
+            <td align="center">{{statistics.aAmountAll}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

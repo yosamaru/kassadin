@@ -1,0 +1,16 @@
+<div ng-controller="ShelfDetailController">
+    <table>
+        <thead>
+        <tr>
+            <td>Description</td>
+            <td>Handler</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>{{book.description}}</td>
+            <td><input type="button" ng-click="download(book.fileDownloadUri)" value="Download"/></td>
+        </tr>
+        </tbody>
+    </table>
+</div>

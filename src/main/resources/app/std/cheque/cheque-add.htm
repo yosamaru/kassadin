@@ -1,0 +1,18 @@
+<h1>ADD Cheque</h1>
+<form ng-controller="ChequeController">
+    <div class="form-group">
+        <label>User</label>
+        <input type="text" class="form-control" ng-model="chequePO.userName"/><br/>
+    </div>
+
+    <div class="form-group">
+        <label>Amount</label>
+        <input type="text" class="form-control" ng-model="chequePO.amount"/>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" ng-click="submitForm()" value="save">用户充值</button>
+    </div>
+
+</form>
+</div>

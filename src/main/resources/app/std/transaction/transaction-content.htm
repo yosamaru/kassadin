@@ -1,0 +1,27 @@
+<div ng-controller="TransactionController">
+    <table border="1" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr>
+            <td align="center">Transaction Number</td>
+            <td align="center">User</td>
+            <td align="center">Amount</td>
+            <td align="center">Remarks</td>
+            <td align="center">Created Date</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="transaction in transactions">
+            <td align="center">{{transaction.id}}</td>
+            <td align="center">{{transaction.userName}}</td>
+            <td align="center">{{transaction.amount}}</td>
+            <td align="center">{{transaction.remarks==0?'订单扣减':'余额充值'}}</td>
+            <td align="center">{{transaction.createTime}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+<script>
+
+
+</script>

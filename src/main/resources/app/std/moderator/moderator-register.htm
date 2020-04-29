@@ -1,0 +1,17 @@
+<h1>ADD Moderator</h1>
+<form ng-controller="ModeratorController">
+    <div class="form-group">
+        <label>username</label>
+        <input type="text" class="form-control" ng-model="moderatorPO.username"/><br/>
+    </div>
+
+    <div class="form-group">
+        <label>password</label>
+        <input type="text" class="form-control" ng-model="moderatorPO.password"/>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" ng-click="register()" value="save">注册</button>
+    </div>
+</form>
+</div>

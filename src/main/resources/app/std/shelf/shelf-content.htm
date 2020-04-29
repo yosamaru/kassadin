@@ -1,0 +1,26 @@
+<div ng-controller="ShelfController">
+    <table border="1" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr>
+            <td align="center">Book</td>
+            <td align="center">User</td>
+            <td align="center">Last Access Date</td>
+            <td align="center">Number of Accesses</td>
+            <td align="center">Handler</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="shelf in shelfs">
+            <td align="center">{{shelf.bookSubject}}</td>
+            <td align="center">{{shelf.userName}}</td>
+            <td align="center">{{shelf.lastAccessDate}}</td>
+            <td align="center">{{shelf.numberOfAccesses}}</td>
+            <td align="center">
+                <input type="button" ng-click="remove(shelf.id)" value="Remove"/>
+                <input type="button" ng-click="reader(shelf.id)" value="Reader"/>
+
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

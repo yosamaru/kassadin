@@ -1,0 +1,22 @@
+<div ng-controller="CategoryController">
+    <table border="1" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr>
+            <td align="center">Name</td>
+            <td align="center">Description</td>
+            <td align="center">Handler</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="category in categorys">
+            <td align="center">{{category.name}}</td>
+            <td align="center">{{category.description}}</td>
+            <td align="center">
+                <input type="button" ng-click="remove(category.id)" value="Remove">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <a type="button" href="#/page/category/add" ng-cloak>添加分类</a>
+</div>

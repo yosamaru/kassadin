@@ -1,0 +1,42 @@
+<h1>ADD USER</h1>
+<form ng-controller="UserController">
+    <div class="form-group">
+        <label>username</label>
+        <input type="text" class="form-control" ng-model="userPO.username"/><br/>
+    </div>
+
+    <div class="form-group">
+        <label>password</label>
+        <input type="text" class="form-control" ng-model="userPO.password"/>
+    </div>
+
+    <div class="form-group">
+        <label>name</label>
+        <input type="text" class="form-control" ng-model="userPO.name"/>
+    </div>
+
+    <div class="form-group">
+        <label>email</label>
+        <input type="text" class="form-control" ng-model="userPO.email"/>
+    </div>
+
+    <div class="form-group">
+        <label>telephone</label>
+        <input type="text" class="form-control" ng-model="userPO.telephone"/>
+    </div>
+
+    <div class="form-group">
+        <label>mobile</label>
+        <input type="text" class="form-control" ng-model="userPO.mobile"/>
+    </div>
+
+    <div class="form-group">
+        <label>address</label>
+        <input type="text" class="form-control" ng-model="userPO.address"/>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" ng-click="register()" value="save">保存</button>
+    </div>
+</form>
+</div>

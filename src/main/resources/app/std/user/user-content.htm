@@ -1,0 +1,27 @@
+<div ng-controller="UserController">
+    <table border="1" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr>
+            <td align="center">username</td>
+            <td align="center">name</td>
+            <td align="center">email</td>
+            <td align="center">telephone</td>
+            <td align="center">mobile</td>
+            <td align="center">address</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="user in users">
+            <td align="center">{{user.username}}</td>
+            <td align="center">{{user.name}}</td>
+            <td align="center">{{user.email}}</td>
+            <td align="center">{{user.telephone}}</td>
+            <td align="center">{{user.mobile}}</td>
+            <td align="center">{{user.address}}</td>
+            <!--<td>-->
+            <!--<input type="button" ng-click="remove(user.id)" value="Remove">-->
+            <!--</td>-->
+        </tr>
+        </tbody>
+    </table>
+</div>

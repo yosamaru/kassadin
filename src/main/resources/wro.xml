@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups xmlns="http://www.isdc.ro/wro">
+  <group name="angular">
+    <js>webjar:angular.min.js</js>
+    <js>webjar:angular-route.min.js</js>
+    <js>webjar:angular-ui-router.min.js</js>
+  </group>
+
+  <group name="std">
+    <group-ref>angular</group-ref>
+    <js>classpath*:/app/system/service.js</js>
+    <js>classpath*:/app/system/service-*.js</js>
+    <js>classpath:/app/std/**/*.js</js>
+  </group>
+</groups>

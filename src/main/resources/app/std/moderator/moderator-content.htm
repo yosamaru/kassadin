@@ -1,0 +1,16 @@
+<div ng-controller="ModeratorController">
+    <table border="1" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr>
+            <td align="center">Username</td>
+            <td align="center">Last Login Date</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="moderator in moderators">
+            <td align="center">{{moderator.username}}</td>
+            <td align="center">{{moderator.lastLoginDate}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

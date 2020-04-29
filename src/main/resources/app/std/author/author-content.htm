@@ -1,0 +1,28 @@
+<div ng-controller="AuthorController">
+    <table border="1" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr>
+            <td align="center">Name</td>
+            <td align="center">Email</td>
+            <td align="center">Country</td>
+            <td align="center">Handler</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="author in authors">
+            <td align="center">{{author.name}}</td>
+            <td align="center">{{author.email}}</td>
+            <td align="center">{{author.country}}</td>
+            <td align="center">
+                <input type="button" ng-click="remove(author.id)" value="Remove">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <a type="button" href="#/page/author/add" ng-cloak>添加作者</a>
+</div>
+<script>
+
+
+</script>

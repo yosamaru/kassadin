@@ -1,0 +1,39 @@
+<div ng-controller="ContractController">
+    <table border="1" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr>
+            <td align="center">Contract Number</td>
+            <td align="center">User</td>
+            <td align="center">Book</td>
+            <td align="center">Created Date</td>
+            <td align="center">Updated Date</td>
+            <td align="center">Voided Date</td>
+            <td align="center">Status</td>
+            <td align="center">Approved By</td>
+            <td align="center">Transaction Number</td>
+            <td align="center">Handler</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="contract in contracts">
+            <td align="center">{{contract.id}}</td>
+            <td align="center">{{contract.userName}}</td>
+            <td align="center">{{contract.bookSubject}}</td>
+            <td align="center">{{contract.createTime}}</td>
+            <td align="center">{{contract.updateTime}}</td>
+            <td align="center">{{contract.voidedDate}}</td>
+            <td align="center">{{contract.status==0?'成功':(contract.status==1?'失败':'等待审核')}}</td>
+            <td align="center">{{contract.moderatorName}}</td>
+            <td align="center">{{contract.cashAccountTransactionId}}</td>
+            <td align="center">
+                <input type="button" ng-click="audit(contract.id)" value="Audit"
+                       ng-if="contract.status==2&&auditShow==1">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+
+
+</script>

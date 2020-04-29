@@ -1,0 +1,19 @@
+<h1>USER INDEX</h1>
+<div>
+    <form ng-controller="UserController">
+        <div class="form-group">
+            <label>用户名</label>
+            <input type="text" class="form-control" ng-model="gusername"/><br/>
+        </div>
+
+        <div class="form-group">
+            <label>密码</label>
+            <input type="text" class="form-control" ng-model="gpassword"/>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" ng-click="loginUser()" value="save">登录</button>
+            <button type="submit" ng-click="goRegister()" value="save">注册</button>
+        </div>
+    </form>
+</div>
