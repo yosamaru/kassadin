@@ -16,7 +16,7 @@
 
 <div ui-view="footer"></div>
 
-<script type="text/javascript" src="<@spring.url '/wro/${app}.js'/>"></script>
+<script type="text/javascript" src="<@spring.url '/kassadin/${app}.js'/>"></script>
 
 </body>
 </html>
