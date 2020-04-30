@@ -1,0 +1,23 @@
+<div ng-controller="PageAController">
+	Page A
+	<table>
+		<thead>
+			<tr>
+				<td>Test Id</td>
+				<td>Test</td>
+				<td></td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="t in data">
+				<td>{{t.testId}}</td>
+				<td>{{t.test}}</td>
+				<td>
+					<input type="button" ng-click="remove(t.testId)" value="Remove">
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<input type="button" ng-click="add()" value="Add">
+</div>
